@@ -4,9 +4,49 @@
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>Formulario Accesible - Julián Andrés Morales Cubides</title>
-    <link rel='stylesheet' href='main.css'>
+    <link rel='stylesheet' href='css/style.css'>
 </head>
 <body>
-    
+    <div class="tarjeta">
+        <div>
+            <form action="guardar.php" method="post">
+            <p>Nombre Completo</p>
+                <label for="nombre"></label>
+                    <input class="nombreC" placeholder="Ingrese su nombre completo" type="text" id="nombre" name="nombre">
+            <p>Correo</p>
+                <label for="correo"></label>
+                    <input placeholder="josecarabali@gmail.com" type="email" id="correo" name="correo">
+            <p>Ingrese su contraseña</p>
+                <label for="contraseña"></label>
+                    <input placeholder="********" type="password" id="contraseña" name="contraseña">            
+                        <button type="button" onclick="mostarPassword()">👁</button>
+            <p>Confirme su contraseña</p>
+                <label for="confirmcontra"></label>
+                    <input placeholder="********" type="password" id="confirmcontra" name="confirmcontra">            
+                        <button type="button" onclick="mostarPassword()">👁</button>
+            <br>
+                <button>Crear Perfil </button>
+            </form>
+        </div>
+            <div class="progreso">
+                <span>65%</span>
+            </div>
+        <div>
+            <p>Perfil Completado</p>
+        </div>
+
+        <main>
+            <s>Cuenta Creada</s>
+                <br>
+            <s>Barra de Progreso Completada</s>
+                <br>
+            <s>Perfil creado</s>
+            <p>Cree su primer proyecto</p>
+            <p>Invite un amigo</p>
+        </main>
+
+        
+    </div>
+
 </body>
 </html>
