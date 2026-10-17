@@ -8,43 +8,46 @@
 </head>
 <body>
     <div class="tarjeta">
-        <div>
-            <form action="guardar.php" method="post">
-            <p>Nombre Completo</p>
-                <label for="nombre"></label>
+        <div class="tarjeta1">
+            <form  action="guardar.php" method="post">
+
+                <label for="nombre"><br>Nombre Completo</br></label>
                     <input class="nombreC" placeholder="Ingrese su nombre completo" type="text" id="nombre" name="nombre">
-            <p>Correo</p>
-                <label for="correo"></label>
-                    <input placeholder="josecarabali@gmail.com" type="email" id="correo" name="correo">
-            <p>Ingrese su contraseña</p>
-                <label for="contraseña"></label>
-                    <input placeholder="********" type="password" id="contraseña" name="contraseña">            
-                        <button type="button" onclick="mostarPassword()">👁</button>
-            <p>Confirme su contraseña</p>
-                <label for="confirmcontra"></label>
+                <div class="campo-correo">
+                    <label for="correo"><br>Correo electronico<br></label>
+                        <input class="correo" placeholder="josecarabali@gmail.com" type="email" id="correo" name="correo">
+                    <p class="mensajeobli">el correo es obligatorio</p>
+                </div>
+                <label for="contraseña"><br>Ingrese su contraseña</br></label>
+                    <input class="contraseña" placeholder="********" type="password" id="contraseña" name="contraseña">            
+                        <button class="ojito" type="button" onclick="mostarPassword()">👁</button>
+                <label for="confirmcontra"><br>Confirme su contraseña</br></label>
                     <input placeholder="********" type="password" id="confirmcontra" name="confirmcontra">            
-                        <button type="button" onclick="mostarPassword()">👁</button>
-            <br>
-                <button>Crear Perfil </button>
+                        <button class="ojito" type="button" onclick="mostarPassword()">👁</button>
+            <br></br>
+                <button type="button">Crear Perfil </button>
             </form>
         </div>
+
+        <div class="tarjeta2">
             <div class="progreso">
                 <span>65%</span>
             </div>
-        <div>
-            <p>Perfil Completado</p>
+            <div>
+                <p>Perfil Completado</p>
+            </div>
+
+            <main>
+                <s>Cuenta Creada</s>
+                    <br>
+                <s>Barra de Progreso Completada</s>
+                    <br>
+                <s>Perfil creado</s>
+                <p>Cree su primer proyecto</p>
+                <p>Invite un amigo</p>
+            </main>
+
         </div>
-
-        <main>
-            <s>Cuenta Creada</s>
-                <br>
-            <s>Barra de Progreso Completada</s>
-                <br>
-            <s>Perfil creado</s>
-            <p>Cree su primer proyecto</p>
-            <p>Invite un amigo</p>
-        </main>
-
         
     </div>
 
