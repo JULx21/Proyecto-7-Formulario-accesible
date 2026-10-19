@@ -12,20 +12,26 @@
             <form  action="guardar.php" method="post">
 
                 <label for="nombre"><br>Nombre Completo</br></label>
-                    <input class="nombreC" placeholder="Ingrese su nombre completo" type="text" id="nombre" name="nombre">
-                <div class="campo-correo">
+                    <input class="nombreC" placeholder="Ingrese su nombre completo" type="text" id="nombre" name="nombre" required minlength="3"  aria-required="true"  required>
+                        <br>
+                            <small class="error">Ingresa tu nombre completo.</small>
+                    <div class="campo-correo">
                     <label for="correo"><br>Correo electronico<br></label>
-                        <input class="correo" placeholder="josecarabali@gmail.com" type="email" id="correo" name="correo">
-                    <p class="mensajeobli">el correo es obligatorio</p>
+                        <input class="correo" placeholder="josecarabali@gmail.com" type="email" id="correo" required name="correo" aria-required="true"
+                                required aria-describedby="ayuda-correo" required       >
+                            <br>
+                                <small class="error" id="ayuda-correo">el correo es obligatorio</small>
                 </div>
                 <label for="contraseña"><br>Ingrese su contraseña</br></label>
-                    <input class="contraseña" placeholder="********" type="password" id="contraseña" name="contraseña">            
-                        <button class="ojito" type="button" onclick="mostarPassword()">👁</button>
+                    <input class="contraseña" placeholder="********" type="password" id="contraseña" name="contraseña" aria-required="true" required>            
+                        <button class="ojito" type="button" onclick="mostarPassword()"><strong>👁</strong></button>
                 <label for="confirmcontra"><br>Confirme su contraseña</br></label>
-                    <input placeholder="********" type="password" id="confirmcontra" name="confirmcontra">            
-                        <button class="ojito" type="button" onclick="mostarPassword()">👁</button>
+                    <input class="contraseña"  placeholder="********" type="password" id="confirmcontra" name="confirmcontra" aria-required="true" required>            
+                        <button class="ojito" type="button" onclick="mostarPassword()"><strong>👁</strong></button>
             <br></br>
-                <button type="button">Crear Perfil </button>
+                <div class="crear-perfil">
+                    <button type="button" href="futuro.css">Crear Perfil </button>
+                </div>
             </form>
         </div>
 
@@ -33,18 +39,20 @@
             <div class="progreso">
                 <span>65%</span>
             </div>
-            <div>
+            <div class="perfil-completado">
                 <p>Perfil Completado</p>
             </div>
 
-            <main>
-                <s>Cuenta Creada</s>
+            <main class="tarjeta3">
+                <s> Cuenta Creada</s>
                     <br>
                 <s>Barra de Progreso Completada</s>
                     <br>
                 <s>Perfil creado</s>
-                <p>Cree su primer proyecto</p>
-                <p>Invite un amigo</p>
+                    <br>
+                <s class="linea-mitad">Cree su primer proyecto</s>
+                    <br>
+                <s class="linea-mitad">Invite un amigo</s>
             </main>
 
         </div>

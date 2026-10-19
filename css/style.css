@@ -7,7 +7,7 @@ body {
 .tarjeta {
     background-color: #fdfdfd;
     display: flex;
-    padding: 20px;
+    padding: 80px;
     border-radius: 20px;
     border: 1px solid black;
      border-right: 1px solid black;
@@ -28,24 +28,42 @@ body {
     padding: 7px;
     border: 2px solid black ;
     border-radius: 10px;
+    
 }
 .nombreC::placeholder { 
 
  color: #c2bebe;
 }
-.correo{
-     padding: 7px;
-    border: 2px solid rgb(247, 0, 0) ;
-    border-radius: 10px;
+.error{
+    color: #df0707;
 }
 
+input:invalid {
+    border-color: rgb(255, 0, 0);
+    border: 1px solid red;
+}
+input:focus{
+    outline: 2px solid black;
+}
+.nombreC:focus{
+    background-color: #f0eded  ;
+}
+
+.correo{
+     padding: 7px;
+    border: 2px solid rgb(0, 0, 0) ;
+    border-radius: 10px;
+}
+.correo:focus{
+    background-color: #f0eded  ;
+}
 .correo::placeholder {
-    color:#df0707
+    color:#ee0505;
 }
 
 .campo-correo p{
     font-size: 12px;
-    color: #df0707;
+    color: #ee0505;
     margin-top: 5px;
 }
 
@@ -54,19 +72,28 @@ body {
     border: 2px solid black ;
     border-radius: 10px;
 }
+.contraseña:focus{
+    background-color: #f0eded  ;
+}
 .contraseña::placeholder{
     color: #c2bebe;
 }
 .ojito {
     background-color: transparent;
     border: none;
+    color: #000000;
+    margin-left: 1px;
 }
 
+.ojito:focus{
+    background-color: #f0eded  ;
+}
 .tarjeta2 {
     align-items: end;
 }
 /* Estilos del círculo de progreso */
 .progreso {
+    margin-left: 30px;
     width: 150px;
     height: 150px;
     border-radius: 50%;
@@ -94,4 +121,35 @@ body {
     font-size: 28px;
     font-weight: bold;
     color: #050505;
+}
+.perfil-completado p{
+    margin-left: 45px;
+}
+
+.tarjeta3{
+
+    margin-left: 30px;
+    width: 115px;
+    background-color: #e7e4e4;
+    padding: 20px;
+    border-radius: 20px;
+    
+}
+.tarjeta3 s{
+    font-size: 11.8px; 
+}
+.linea-mitad{
+    text-decoration: none;
+}
+ .crear-perfil button{
+    width: 185px;
+    padding: 12px;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    background-color: #000000;
+    color: white;
+}
+.crear-perfil button:focus{
+    background-color: #7a7878  ;
 }
